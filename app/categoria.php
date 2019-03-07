@@ -10,4 +10,9 @@ class categoria extends Model
         'Descricao'
         
             ];
+
+            public function produto()
+            {
+                return $this->hasMany('App\produto');
+            }
 }

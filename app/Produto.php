@@ -10,5 +10,9 @@ class Produto extends Model
 'Descricao','Preco','Cor','Peso'
 
     ];
+    public function categoria()
+    {
+        return $this->belongsTo('App\categoria');
+    }
     
 }
